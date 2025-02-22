@@ -48,7 +48,7 @@ const Contact = ({isDarkMode}) => {
             whileInView={{y: 0, opacity: 1}}
             transition={{delay: 0.5, duration: 0.5}}
             className='text-center text-5xl font-Ovo'>
-                Touch Me
+                Email Me
             </motion.h2>
             
             <motion.p 
@@ -56,7 +56,7 @@ const Contact = ({isDarkMode}) => {
             whileInView={{opacity: 1}}
             transition={{delay: 0.7, duration: 0.5}}
             className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-                This is placeholder text.
+                If you have any questions or feedback, please use the form below.
             </motion.p>
 
             <motion.form 

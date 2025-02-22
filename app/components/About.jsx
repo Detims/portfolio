@@ -39,7 +39,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'>
-                    This is some placeholder text until I come up with something interesting to put here.
+                    Images and format are placeholders.
                 </p>
 
                 <motion.ul 
