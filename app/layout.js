@@ -1,6 +1,5 @@
-import { Outfit, Ovo } from "next/font/google";
+import { Outfit, Ovo, Open_Sans } from "next/font/google";
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -12,6 +11,11 @@ const ovo = Ovo({
   weight: ["400"],
 });
 
+const open_sans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["400"],
+})
+
 export const metadata = {
   title: "Nhan's Portfolio",
   description: "Portfolio website",
@@ -21,10 +25,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
+        className={`${outfit.className} ${ovo.className} ${open_sans.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
         {children}
-        <SpeedInsights />
       </body>
     </html>
   );
