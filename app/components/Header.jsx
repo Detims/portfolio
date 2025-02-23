@@ -29,15 +29,19 @@ const Header = () => {
         transition={{duration: 0.8, type: 'spring', stiffness: 100}}>
             <Image src={assets.tororo} alt='' className='rounded-full w-32' />
         </motion.div>
-      <motion.h3 
-      initial={{y: -30, opacity: 0}}
-      whileInView={{y: 0, opacity: 1}}
-      transition={{duration: 0.8, delay: 0.5}}
-      className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-        Hi! I'm Nhan Nguyen {/*<Image src={assets.tororo} alt='' className='w-6' />*/}</motion.h3>
+
+        <motion.h3 
+        initial={{y: -30, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{duration: 0.8, delay: 0.5}}
+        className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
+            Hi! I'm Nhan Nguyen
+        </motion.h3>
+
         <motion.h1 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
             <span ref={el} className='font-Ovo'/>
-            </motion.h1>
+        </motion.h1>
+
         <motion.p 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
@@ -46,20 +50,23 @@ const Header = () => {
             I am a university student studying Computer Science at CSULB. I am aspiring to become
             a full-stack developer. 
         </motion.p>
+
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             <motion.a 
             initial={{y: 30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay: 1}}
             href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'>
-                Contact Me<Image src={assets.hikari} alt='' className='w-4' /></motion.a>
+                Contact Me<Image src={assets.arrow_right} alt='' className='w-4' />
+            </motion.a>
 
             <motion.a 
             initial={{y: 30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay: 1.2}}
             href="/resume.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
-            My Resume<Image src={assets.hikari} alt='' className='w-4' /></motion.a>
+                My Resume<Image src={assets.download} alt='' className='w-4' />
+            </motion.a>
         </div>
     </div>
   )

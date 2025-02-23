@@ -1,27 +1,39 @@
 import arona_angry from './arona_angry.jpg';
-import arona_happy from './arona_happy.jpg'
+import arona_happy from './arona_happy.jpg';
+import arrow_icon from './arrow-icon.png';
+import arrow_icon_dark from './arrow-icon-dark.png'
+import arrow_right from './arrow-right-solid.svg';
+import download from './download-solid.svg';
+import git from './git.png';
+import godot from './godot.png';
 import hikari from './Hikari_Icon.webp';
 import hikari_nozomi from './hikari_nozomi.jpg';
-import hoshino from './hoshino.jpg';
 import la_pluma from './la_pluma.png';
+import moon from './moon-solid.svg';
 import mudrock from './Mudrock.webp';
-import natsu from './natsu.jpg';
 import nozomi from './Nozomi_Icon.webp';
 import tororo from './tororo.jpg';
-import tsuna from './tsuna.jpg';
+import sun from './sun-solid.svg';
+import vscode from './vscode.png';
 
 export const assets = {
     arona_angry,
     arona_happy,
+    arrow_icon,
+    arrow_icon_dark,
+    arrow_right,
+    download,
+    git,
+    godot,
     hikari,
     hikari_nozomi,
-    hoshino,
     la_pluma,
+    moon,
     mudrock,
-    natsu,
     nozomi,
     tororo,
-    tsuna,
+    sun,
+    vscode,
 };
 
 export const workData = [
@@ -47,12 +59,6 @@ export const workData = [
     },
 ];
 
-/*
-export const serviceData = [
-    {},
-];
-*/
-
 export const infoList = [
     { icon: assets.hikari, iconDark: assets.nozomi, title: 'Languages', description: 'HTML, CSS, Javascript, C++, Python' },
     { icon: assets.hikari, iconDark: assets.nozomi, title: 'Education', description: 'Pursuing B.S. in Computer Science' },
@@ -60,5 +66,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.tsuna, assets.tororo, assets.natsu,
+    assets.vscode, assets.git, assets.godot,
 ];

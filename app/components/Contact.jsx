@@ -34,7 +34,7 @@ const Contact = ({isDarkMode}) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1}}
-        id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/bridge.jpg")] bg-no-repeat bg-center bg-[length:90%_auto]'>
+        id='contact' className='w-full px-[12%] py-10 scroll-mt-20'> {/*bg-[url("/bridge.jpg")] bg-no-repeat bg-center bg-[length:90%_auto]*/}
 
             <motion.h4 
             initial={{y: -20, opacity: 0}}
