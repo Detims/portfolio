@@ -23,6 +23,8 @@ const Header = () => {
 
   return (
     <div className='w-11/12 max-w-3x1 text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+
+        {/* Profile Icon and Introduction */}
         <motion.div
         initial={{scale: 0}}
         whileInView={{scale: 1}}
@@ -38,10 +40,12 @@ const Header = () => {
             Hi! I'm Nhan Nguyen
         </motion.h3>
 
+        {/* Text Cycler */}
         <motion.h1 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
             <span ref={el} className='font-Ovo'/>
         </motion.h1>
 
+        {/* Edit description until I come up with something better */}
         <motion.p 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
@@ -51,6 +55,7 @@ const Header = () => {
             a full-stack developer. 
         </motion.p>
 
+        {/* Contact Redirect and Resume Download */}
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             <motion.a 
             initial={{y: 30, opacity: 0}}

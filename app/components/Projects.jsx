@@ -10,7 +10,7 @@ const Projects = ({isDarkMode}) => {
     whileInView={{opacity: 1}}
     transition={{duration: 1}}
     id='projects' className='w-full px-[12%] py-10 scroll-mt-20'>
-
+      {/* Heading Text */}
       <motion.h4 
       initial={{y: -20, opacity: 0}}
       whileInView={{y: 0, opacity: 1}}
@@ -35,6 +35,7 @@ const Projects = ({isDarkMode}) => {
         Work in progress, will fill later
       </motion.p>
 
+      {/* Project Blocks */}
       <motion.div 
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
@@ -61,6 +62,7 @@ const Projects = ({isDarkMode}) => {
         ))}
       </motion.div>
 
+        {/* Show More Button (doesn't actually work) */}
         <motion.a 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}

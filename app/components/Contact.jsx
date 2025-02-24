@@ -6,6 +6,7 @@ import { motion } from "motion/react"
 const Contact = ({isDarkMode}) => {
     const [result, setResult] = useState("");
 
+    {/* Use Web3Forms to handle email requests */}
     const onSubmit = async (event) => {
         event.preventDefault();
         setResult("Sending....");
@@ -35,7 +36,7 @@ const Contact = ({isDarkMode}) => {
         whileInView={{opacity: 1}}
         transition={{duration: 1}}
         id='contact' className='w-full px-[12%] py-10 scroll-mt-20'> {/*bg-[url("/bridge.jpg")] bg-no-repeat bg-center bg-[length:90%_auto]*/}
-
+            {/* Header Text */}
             <motion.h4 
             initial={{y: -20, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
@@ -59,6 +60,7 @@ const Contact = ({isDarkMode}) => {
                 If you have any questions or feedback, please use the form below.
             </motion.p>
 
+            {/* Form accepts name, email, and message */}
             <motion.form 
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}

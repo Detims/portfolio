@@ -10,6 +10,8 @@ const About = ({isDarkMode}) => {
     whileInView={{opacity: 1}}
     transition={{duration: 1}}
     id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
+
+        {/* Heading Text */}
         <motion.h4 
         initial={{opacity: 0, y: -20}}
         whileInView={{opacity: 1, y: 0}}
@@ -21,11 +23,14 @@ const About = ({isDarkMode}) => {
         transition={{duration: 0.5, delay: 0.5}}
         className='text-center text-5xl font-Ovo'>About Me</motion.h2>
 
+        {/* About Section Block */}
         <motion.div 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.8}}
         className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+
+            {/* About Image */}
             <motion.div 
             initial={{opacity: 0, scale: 0.9}}
             whileInView={{opacity: 1, scale: 1}}
@@ -33,6 +38,8 @@ const About = ({isDarkMode}) => {
             className='w-64 sm:w-80 rounded-3xl max-w-none'>  
                 <Image src={isDarkMode ? assets.arona_angry : assets.arona_happy} alt='user' className='w-full rounded-3xl'/>
             </motion.div>
+            
+            {/* Description */}
             <motion.div 
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
@@ -42,6 +49,7 @@ const About = ({isDarkMode}) => {
                     Images and format are placeholders.
                 </p>
 
+                {/* Info Blocks */}
                 <motion.ul 
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
@@ -60,6 +68,7 @@ const About = ({isDarkMode}) => {
                     ))}
                 </motion.ul>
 
+                {/* Tool Icons */}
                 <motion.h4 
                 initial={{opacity: 0, y: 20}}
                 whileInView={{opacity: 1, y: 0}}

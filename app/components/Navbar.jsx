@@ -15,6 +15,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     sideMenuRef.current.style.transform = 'translateX(16rem)'
   }
 
+  {/* Change box at the top of the screen when scrolled down enough */}
   useEffect(() => {
     window.addEventListener('scroll', ()=>{
       if (scrollY > 50) {
