@@ -63,7 +63,8 @@ const Projects = ({isDarkMode}) => {
       </motion.div>
 
         {/* Show More Button (doesn't actually work) */}
-        <motion.a 
+        
+        {/*<motion.a 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{delay: 1.1, duration: 0.5}}
@@ -71,7 +72,7 @@ const Projects = ({isDarkMode}) => {
         hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
           Show More <Image src={isDarkMode ? assets.nozomi : assets.hikari} alt='Right arrow'
           className='w-4' />
-        </motion.a>
+        </motion.a>*/}
 
     </motion.div>
   )

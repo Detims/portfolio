@@ -37,7 +37,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     {/* Navbar */}
 
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 
-        ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
+        ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-stone-900 dark:shadow-white/20" : ""}`}>
           
         {/* Left Icon */}
 
@@ -77,7 +77,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         {/* Mobile Menu */}
 
         <ul ref={sideMenuRef} className='flex md:hiden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500
-        dark:bg-darkHover dark:text-white'>
+        dark:bg-stone-900 dark:text-white'>
 
           <div className='absolute right-6 top-6' onClick={closeMenu}>
             <Image src={isDarkMode ? assets.nozomi : assets.hikari} alt='' className='w-5 cursor-pointer' />
