@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${ovo.className} ${openSans.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
+        className={`${ovo.className} ${openSans.className} antialiased leading-8 overflow-x-hidden dark:bg-stone-800 dark:text-white`}
       >
         {children}
       </body>
