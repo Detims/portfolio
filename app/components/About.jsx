@@ -58,7 +58,7 @@ const About = ({isDarkMode}) => {
                     {infoList.map(({icon, iconDark, title, description}, index) => (
                         <motion.li 
                         whileHover={{scale: 1.05}}
-                        className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-stone-500/10 hover:-translate-y-1 duration-500 hover:shadow-black
+                        className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-stone-500/10 hover:-translate-y-1 duration-100 hover:shadow-black
                         dark:border-white dark:hover:shadow-white dark:hover:bg-stone-900/50' 
                         key={index}>
                             <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3' />
@@ -72,7 +72,7 @@ const About = ({isDarkMode}) => {
                 <motion.h4 
                 initial={{opacity: 0, y: 20}}
                 whileInView={{opacity: 1, y: 0}}
-                transition={{duration: 1.3, duration: 0.5}}
+                transition={{delay: 1.3, duration: 0.5}}
                 className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I Use</motion.h4>
 
                 <motion.ul 
@@ -83,7 +83,7 @@ const About = ({isDarkMode}) => {
                     {toolsData.map((tool, index) => (
                         <motion.li 
                         whileHover={{scale: 1.1}}
-                        className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500' key={index}>
+                        className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-50' key={index}>
                             <Image src={tool} alt='Tool' className='w-5 sm:w-7' />
                         </motion.li>
                     ))}

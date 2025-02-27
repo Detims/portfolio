@@ -92,9 +92,9 @@ const Contact = ({isDarkMode}) => {
                 
                 <motion.button 
                 whileHover={{scale: 1.05}}
-                transition={{duration: 0.1}}
+                transition={{duration: 0.6}}
                 type='submit'
-                className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500
+                className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-50
                 dark:bg-transparent dark:bg-stone-950 dark:border-[0.5px]'>
                     Submit <Image src={assets.hikari} alt='' className='w-4'/>
                 </motion.button>
