@@ -37,7 +37,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     {/* Navbar */}
 
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 
-        ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-stone-900 dark:shadow-white/20" : ""}`}>
+        ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-stone-800 dark:shadow-white/20 border border-gray-500" : ""}`}>
           
         {/* Left Icon */}
 
@@ -48,7 +48,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         {/* Nav Anchors */}
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 
-          ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}>
+          ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 border border-gray-500 dark:border-white/50 dark:bg-transparent"} `}>
             <li><a className='font-Ovo' href="#top">Home</a></li>
             <li><a className='font-Ovo' href="#about">About Me</a></li>
             <li><a className='font-Ovo' href="#projects">Projects</a></li>
@@ -70,17 +70,17 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             </a>
 
             <button className='block md:hidden ml-3 ' onClick={openMenu}>
-              <Image src={assets.hikari} alt='' className='w-6' />
+              <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt='' className='w-6' />
             </button>
         </div>
 
         {/* Mobile Menu */}
 
-        <ul ref={sideMenuRef} className='flex md:hiden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500
+        <ul ref={sideMenuRef} className='flex md:hiden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-stone-100 transition duration-500
         dark:bg-stone-900 dark:text-white'>
 
           <div className='absolute right-6 top-6' onClick={closeMenu}>
-            <Image src={isDarkMode ? assets.nozomi : assets.hikari} alt='' className='w-5 cursor-pointer' />
+            <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt='' className='w-5 cursor-pointer' />
           </div>
           
           <li><a className='font-Ovo' onClick={closeMenu} href="#top">Home</a></li>

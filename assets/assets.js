@@ -9,6 +9,8 @@ import godot from './godot.png';
 import hikari from './Hikari_Icon.webp';
 import hikari_nozomi from './hikari_nozomi.jpg';
 import la_pluma from './la_pluma.png';
+import menu_black from './menu-black.png';
+import menu_white from './menu-white.png';
 import moon from './moon-solid.svg';
 import mudrock from './Mudrock.webp';
 import nozomi from './Nozomi_Icon.webp';
@@ -28,6 +30,8 @@ export const assets = {
     hikari,
     hikari_nozomi,
     la_pluma,
+    menu_black,
+    menu_white,
     moon,
     mudrock,
     nozomi,
