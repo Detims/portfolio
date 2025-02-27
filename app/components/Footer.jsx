@@ -9,7 +9,7 @@ const Footer = ({isDarkMode}) => {
         <Image src={isDarkMode ? assets.nozomi : assets.hikari} alt='' className='w-36 mx-auto mb-2'/>
 
         <div className='w-max flex items-center gap-2 mx-auto'>
-            <Image src={isDarkMode ? assets.nozomi : assets.hikari} alt='' className='w-6'/>
+            <Image src={isDarkMode ? assets.envelope_white : assets.envelope_black} alt='' className='w-6'/>
             example@gmail.com
         </div>
       </div>

@@ -1,9 +1,11 @@
 import arona_angry from './arona_angry.jpg';
 import arona_happy from './arona_happy.jpg';
 import arrow_icon from './arrow-icon.png';
-import arrow_icon_dark from './arrow-icon-dark.png'
+import arrow_icon_dark from './arrow-icon-dark.png';
 import arrow_right from './arrow-right-solid.svg';
 import download from './download-solid.svg';
+import envelope_black from './envelope-black.svg';
+import envelope_white from './envelope-white.svg';
 import git from './git.png';
 import godot from './godot.png';
 import hikari from './Hikari_Icon.webp';
@@ -25,6 +27,8 @@ export const assets = {
     arrow_icon_dark,
     arrow_right,
     download,
+    envelope_black,
+    envelope_white,
     git,
     godot,
     hikari,
